@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="oguzhan.js"></script> 
+    <title>Dijital Clock</title>
+    <script src="oguzhan.js"></script>
+   <style>
+       body{
+    background-color: #424242;
+    color: #ffffff;
+}
+#clock{
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+#clock h2{
+    font-family:'Bebas Neue', cursive;
+    font-size: 50px;
+}
+.clock-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: center;
+    align-content: center;
+}
+.clock-items{
+    width: 32%;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 10px;
+    margin-right: 3%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+}
+.clock-items p{
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+}
+p{
+    text-align: center;
+}
+#date{
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+   </style>
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <div id="clock">
+        <h2>DİGİTAL Clock</h2>
+        <div class="clock-container">
+        <div class="clock-items"><p id="hour">15</p></div>
+        <div class="clock-items"><p id="minute">20</p></div>
+        <div class="clock-items"><p id="second">42</p></div>
+        </div>
+      <p id="date"></p>
+    </div>
+
+</body>
+
+
+</html>
